@@ -1,10 +1,10 @@
 
 
 How to get Output:
-
-Step1: just run the Index.html file in browser.
-Step2: click on ford Logo, then you will get robo image with animation.
-Step3: click on Robo image, then you will get Ford logo with animation.
+Step1:clone the project.
+Step2: just run the Index.html file in browser.
+Step3: click on ford Logo, then you will get robo image with animation.
+Step4: click on Robo image, then you will get Ford logo with animation.
 
 
 
