@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        .my-block {
+            position: absolute;
+            top: 20%;
+            left: 40%;
+
+        }
+
+        .textBlock {
+            position: relative;
+            border-radius: 50%;
+            border: 0.1rem solid #4583fa;
+            padding: 3%;
+            width: 250px;
+            height: 250px;
+        }
+
+        @-webkit-keyframes rotate {
+            from {
+                -webkit-transform: rotate(0deg);
+            }
+
+            to {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        .newClaa {
+            -webkit-animation: rotate 12s linear infinite;
+            border: 0.15rem dashed #397efa;
+        }
+
+        p {
+            text-align: center;
+            color: #ababab;
+        }
+
+        .circular--landscape,
+        .circular--robo {
+            position: absolute;
+            height: 250px;
+            border-radius: 50%;
+            background:#2c55d1;
+            text-align: center;
+            transition: opacity 0.3s;
+            -webkit-transition: opacity 0.3s;
+            opacity: 1;
+            overflow: hidden;
+            width: 250px;
+            top: 16%;
+            /* left: 4%; */
+            left: 0.6rem
+        }
+
+        .circular--robo {
+            background: transparent !important;
+        }
+
+        .circular--landscape img,
+        .circular--robo img {
+            height: 100%;
+            width: 50%;
+            transition: 0.5s all ease-in-out;
+        }
+
+        .circular--landscape:hover img,
+        .circular--landscape:focus img {
+            transform: scale(1.2);
+        }
+
+        .circular--landscape:hover {
+            opacity: 0.2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="my-block">
+        <p id="welcome" style="opacity:0;">Welcome</p>
+        <div class="textBlock" id="textBlock">
+        </div>
+        <div id="circular--landscape" class="circular--landscape" onclick="circularClicked()">
+            <img id="myImg" src="assets/FORT - assessment - logo.svg" />
+        </div>
+        <div id="circular--robo" style="display: none;" class="circular--robo" onclick="circularClicked()">
+            <img id="myImg" src="assets/FORT - assessment - robo.png" />
+        </div>
+        <p id="clickabove" style="opacity:1;">click above</p>
+    </div>
+
+    <script src="/index.js">
+    </script>
+
+</body>
+
+</html>
